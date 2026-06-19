@@ -1,0 +1,21 @@
+{
+  "name": "Axon Global",
+  "short_name": "Axon",
+  "description": "Ecosistema Corporativo Unificado: Sophia, Legal, Trade y Play.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05010a",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "image_4e8f77.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "image_4e8f77.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
