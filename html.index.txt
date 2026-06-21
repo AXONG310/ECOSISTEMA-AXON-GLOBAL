@@ -2123,9 +2123,6 @@ body {
             <p>Templo Sophia: <a href="mailto:sophia@axonlegal.org" class="text-axon-sophia hover:underline">sophia@axonlegal.org</a></p>
         </section>
     </div>
-
-### PROYECTO AXON GLOBAL: INDEX.HTML (INTEGRIDAD TOTAL - PARTE 2)
-
 ```html
 <div id="legal-service-modal" class="fixed inset-0 legal-modal z-[300] hidden flex items-center justify-center p-4">
         <div class="legal-content max-w-2xl w-full max-h-[90vh] overflow-y-auto rounded-2xl relative shadow-[0_0_50px_rgba(59,130,246,0.2)] border border-white/10">
