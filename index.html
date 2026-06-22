@@ -3134,4 +3134,31 @@
         })();
 
         document.addEventListener('keydown', function(e) {
-            if (
+           if (e.key === 'Enter') {
+                const activeInput = document.activeElement;
+                if (activeInput && (activeInput.tagName === 'INPUT' || activeInput.tagName === 'TEXTAREA')) {
+                    const parent = activeInput.closest('form') || activeInput.parentElement;
+                    const sendBtn = parent.querySelector('button[type="submit"]') || parent.querySelector('button') || parent.querySelector('.send-btn');
+                    if (sendBtn) {
+                        e.preventDefault();
+                        sendBtn.click();
+                    }
+                }
+            }
+        });
+
+        function aplicarTraduccionAutomatica() {
+            const userLang = navigator.language || navigator.userLanguage;
+            const shortLang = userLang.split('-')[0];
+            if (shortLang !== 'es') {
+                const welcomeMsg = {
+                    'en': 'Welcome to Axon Global. International Justice and Logistics.',
+                    'uk': 'Ласкаво просимо до Axon Global. Міжнародне право та логістика.'
+                };
+                if (welcomeMsg[shortLang]) alert(welcomeMsg[shortLang]);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', aplicarTraduccionAutomatica);
+    </script>
+</body>
+</html>
